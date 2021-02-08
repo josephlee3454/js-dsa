@@ -19,7 +19,7 @@ function selection(arr){ // name a function selection sort that takes in a unsor
 }
 selection([3,5,1,2,4])
 
-// algo 
+// algo:
 // create a function that takes in a unsorted array and return a sorted array 
 // create two for loops one needs to be nested the outside loop is the main driver it does the swapping 
 // only after the inside loop will find will find the min value 
