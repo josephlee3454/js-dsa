@@ -31,6 +31,7 @@ class SinglyLinkedList{
     while(curr){
       console.log(curr.val)
       curr = curr.next
+
     }
   }
   pop(){
@@ -47,6 +48,11 @@ class SinglyLinkedList{
       this.tail.next = null;
 
       this.length--
+      if (this.length === 0){
+        this.head = null;
+        this.tail = null;
+      }
+
       return current
       // console.log(this.tail)
       // console.log(this.head)
@@ -66,6 +72,6 @@ console.log(list.push(7))
 console.log(list.traverse())
 console.log(list.pop())
 console.log(list.pop())
-console.log(list.pop())
+
 
 console.log(list.traverse())
