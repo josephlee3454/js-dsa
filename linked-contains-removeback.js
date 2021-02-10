@@ -77,7 +77,7 @@ class SLLNode {
         curr = curr.next;
       }
       prev.next = null;//setting the link to last node to null to remove node
-      return curr.val; return the node stored in the
+       return curr.val; //return the node stored in the
       
   
   
