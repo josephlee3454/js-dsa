@@ -58,6 +58,51 @@ class SinglyLinkedList{
       // console.log(this.head)
     }
 
+  shift(){
+    if (!this.head) return undefined;
+    let temp =  this.head;
+    this.head =  this.head.next;
+    this.length--
+    if (this.length === 0){
+        this.tail = null;
+      }
+    console.log("the length " + this.length)
+    return temp
+
+  }
+
+  unshift(val){
+    let newNode  = new Node(val);
+    if (this.head == null){
+      this.head = newNode
+      this.tail = this.head
+      this.length++
+    } 
+    else{
+      newNode.next = this.head
+      this.head = newNode
+      this.length++
+
+    }
+    return this
+
+  }
+
+  getIdx(idx){
+    if (idx < 0 || idx >= this.length){
+      return null
+    }
+    let counter = 0 //start at 1 if you want actual numbers other wise if you want like array keep it this 
+    let curr = this.head
+
+      while(counter !== idx){
+        curr = curr.next
+        counter++
+      
+    }
+      console.log(curr)
+      return curr
+  }
   
 }
 
@@ -66,12 +111,14 @@ console.log(list.push(2))
 console.log(list.push(7))
 console.log(list.push(4))
 console.log(list.push(7))
-console.log(list.push(8))
-console.log(list.push(7))
+// console.log(list.push(8))
+// console.log(list.push(7))
+console.log(list.getIdx(3))
+// console.log(list.shift())
+// console.log(list.traverse())
+// console.log(list.pop())
+// console.log(list.pop())
 
-console.log(list.traverse())
-console.log(list.pop())
-console.log(list.pop())
 
 
-console.log(list.traverse())
+// console.log(list.traverse())
