@@ -11,14 +11,17 @@ class SinglyLinkedList{
     this.length = 0 
 
   }
+ 
+
   push(val){
     let newNode = new Node(val)
-    if (!this.head)
+    if (this.head == null)
     {
       this.head = newNode
       this.tail = this.head
     }
-    else{
+    else
+    {
       this.tail.next = newNode;
       this.tail = newNode;
 
@@ -33,9 +36,12 @@ class SinglyLinkedList{
       curr = curr.next
 
     }
+    return curr
   }
   pop(){
-    
+
+                
+    //()-()-()-()
       if(!this.head) return undefined;
 
       let current = this.head;

@@ -45,7 +45,7 @@ class SLLNode {
   
     contains(val) {
       // your code here
-      if (this.head === null){
+      if (this.head === null){// checking if the head node exists if it dosnt then it returns false
         return false;
       }
       let curr = this.head;//asiigning the current to the head
