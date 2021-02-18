@@ -1,0 +1,1 @@
+Hi welcome to algo practice repo check out the white board pic folder
