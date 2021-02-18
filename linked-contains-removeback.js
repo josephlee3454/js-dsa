@@ -70,14 +70,15 @@ class SLLNode {
         if (this.head === null){
         return null;
       }
-      let curr = this.head;//asigning the current (runner) to the head
-      let prev = this.head;//create second runner to store previous
-      while (curr.next !== null){///looping all the way through list 
+      let curr = this.head;
+      let prev = this.head;
+      while (curr.next !== null){
         prev = curr;
         curr = curr.next;
       }
-      prev.next = null;//setting the link to last node to null to remove node
-       return curr.val; //return the node stored in the
+      prev.next = null;
+       return curr.val;
+       
       
   
   
